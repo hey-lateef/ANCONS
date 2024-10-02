@@ -8,6 +8,7 @@ import PortfolioSection from './Components/PortfolioSection/PortfolioSection';
 import ContactSection from './Components/ContactSection/ContactSection';
 import ApplyNowSection from './Components/ApplyNowSection/ApplyNowSection';
 import Footer from './Components/Footer/Footer';
+
 const App = () => {
   return (
     <Router>
@@ -16,7 +17,10 @@ const App = () => {
 
         <main className="flex-1">
           <Routes>
+            {/* Default Route */}
             <Route path="/" element={<HeroSection />} />
+
+            {/* Other Routes */}
             <Route path="/about" element={<AboutSection />} />
             <Route path="/services" element={<ServicesSection />} />
             <Route path="/portfolio" element={<PortfolioSection />} />
